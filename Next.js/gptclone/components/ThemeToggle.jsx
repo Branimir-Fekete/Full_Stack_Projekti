@@ -7,7 +7,7 @@ const themes = {
   dracula: 'dracula',
 };
 
-function ThemeToggle() {
+const ThemeToggle = () => {
   const [theme, setTheme] = useState(themes.winter);
 
   const toggleTheme = () => {
@@ -16,10 +16,7 @@ function ThemeToggle() {
     setTheme(newTheme);
   };
   return (
-    <button
-      onClick={toggleTheme}
-      className='btn btn-sm btn-outline'
-    >
+    <button onClick={toggleTheme} className='btn btn-sm btn-outline'>
       {theme === 'winter' ? (
         <BsMoonFill className='h-4 w-4' />
       ) : (
@@ -27,6 +24,5 @@ function ThemeToggle() {
       )}
     </button>
   );
-}
-
+};
 export default ThemeToggle;

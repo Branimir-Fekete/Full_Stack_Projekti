@@ -7,16 +7,13 @@ const links = [
   { href: '/profile', label: 'profile' },
 ];
 
-function NavLinks() {
+const NavLinks = () => {
   return (
     <ul className='menu text-base-content'>
       {links.map((link) => {
         return (
           <li key={link.href}>
-            <Link
-              href={link.href}
-              className='capitalize'
-            >
+            <Link href={link.href} className='capitalize'>
               {link.label}
             </Link>
           </li>
@@ -24,6 +21,5 @@ function NavLinks() {
       })}
     </ul>
   );
-}
-
+};
 export default NavLinks;

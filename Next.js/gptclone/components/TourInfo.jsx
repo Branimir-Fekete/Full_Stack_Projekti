@@ -1,4 +1,4 @@
-function TourInfo({ tour }) {
+const TourInfo = ({ tour }) => {
   const { title, description, stops } = tour;
   return (
     <div className='max-w-2xl'>
@@ -7,17 +7,13 @@ function TourInfo({ tour }) {
       <ul>
         {stops.map((stop) => {
           return (
-            <li
-              key={stop}
-              className='mb-4 bg-base-100 p-4 rounded-xl'
-            >
-              <p className='text'>{stop}</p>
+            <li key={stop} className='mb-4 bg-base-100 p-4 rounded-xl'>
+              <p>{stop}</p>
             </li>
           );
         })}
       </ul>
     </div>
   );
-}
-
+};
 export default TourInfo;
