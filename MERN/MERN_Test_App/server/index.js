@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const UserModel = require('./models/Users');
 
 mongoose.connect(
-  'mongodb+srv://branimir:branimir@cluster0.o9az6lm.mongodb.net/merntestapp?retryWrites=true&w=majority&appName=Cluster0'
+  ''
 );
 
 app.get('/getUsers', (req, res) => {
