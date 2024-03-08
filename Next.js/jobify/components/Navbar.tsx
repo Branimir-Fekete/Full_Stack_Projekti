@@ -15,5 +15,4 @@ function Navbar() {
     </nav>
   );
 }
-
 export default Navbar;
